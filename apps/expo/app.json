@@ -17,13 +17,16 @@
       [
         "expo-updates",
         {
-          "username": "matthewhausman7",
-          "url": "https://u.expo.dev/cfc160d9-7604-4724-ba78-85194adca2d7"
+          "username": "matthewhausman7"
         }
       ]
     ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/cfc160d9-7604-4724-ba78-85194adca2d7"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
