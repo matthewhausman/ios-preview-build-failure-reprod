@@ -12,6 +12,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      ["expo-router", { "origin": "https://www.czero.today/" }],
+      [
+        "expo-updates",
+        {
+          "username": "matthewhausman7",
+          "url": "https://u.expo.dev/cfc160d9-7604-4724-ba78-85194adca2d7"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -28,8 +38,7 @@
       "package": "com.tamagui.myapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {

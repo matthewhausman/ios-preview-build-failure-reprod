@@ -5109,7 +5109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.6, @types/json-schema@npm:^7.0.8":
+"@types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.6, @types/json-schema@npm:^7.0.8, @types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
@@ -5734,12 +5734,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv-formats@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "ajv-formats@npm:2.1.1"
+  dependencies:
+    ajv: ^8.0.0
+  peerDependencies:
+    ajv: ^8.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 4a287d937f1ebaad4683249a4c40c0fa3beed30d9ddc0adba04859026a622da0d317851316ea64b3680dc60f5c3c708105ddd5d5db8fe595d9d0207fd19f90b7
+  languageName: node
+  linkType: hard
+
 "ajv-keywords@npm:^3.5.2":
   version: 3.5.2
   resolution: "ajv-keywords@npm:3.5.2"
   peerDependencies:
     ajv: ^6.9.1
   checksum: 7dc5e5931677a680589050f79dcbe1fefbb8fea38a955af03724229139175b433c63c68f7ae5f86cf8f65d55eb7c25f75a046723e2e58296707617ca690feae9
+  languageName: node
+  linkType: hard
+
+"ajv-keywords@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "ajv-keywords@npm:5.1.0"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+  peerDependencies:
+    ajv: ^8.8.2
+  checksum: c35193940b853119242c6757787f09ecf89a2c19bcd36d03ed1a615e710d19d450cb448bfda407b939aba54b002368c8bff30529cc50a0536a8e10bcce300421
   languageName: node
   linkType: hard
 
@@ -5767,7 +5792,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.0.1":
+"ajv@npm:^8.0.0, ajv@npm:^8.0.1, ajv@npm:^8.9.0":
   version: 8.12.0
   resolution: "ajv@npm:8.12.0"
   dependencies:
@@ -9437,7 +9462,7 @@ __metadata:
     expo-image: ^1.0.0
     expo-linear-gradient: ^12.1.2
     expo-linking: ^4.0.1
-    expo-router: ^1.4.3
+    expo-router: next
     expo-splash-screen: ^0.18.1
     expo-status-bar: ^1.4.4
     expo-updates: ^0.16.3
@@ -9568,9 +9593,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-head@npm:0.0.1":
-  version: 0.0.1
-  resolution: "expo-head@npm:0.0.1"
+"expo-head@npm:0.0.2":
+  version: 0.0.2
+  resolution: "expo-head@npm:0.0.2"
   dependencies:
     react-helmet-async: ^1.3.0
   peerDependencies:
@@ -9579,7 +9604,7 @@ __metadata:
     expo-router: "*"
     react: "*"
     react-native: "*"
-  checksum: 01648dad7384b04c8eaee22c4b86653cc31230e5f3523bf2082924ccc659f61b031900c55f1f08befaaf1bd1616eecb05ae9767eb111ed9151dd619374581930
+  checksum: 80433fbea0daad7d1c299304065695f8afbde1436c792f8fd11d71c496d777d9863fb73ba014590ceb103f4ad96372995cbfecfa0a7420dde61ef9091e536fd8
   languageName: node
   linkType: hard
 
@@ -9664,9 +9689,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-router@npm:^1.4.3":
-  version: 1.7.0
-  resolution: "expo-router@npm:1.7.0"
+"expo-router@npm:next":
+  version: 1.7.1
+  resolution: "expo-router@npm:1.7.1"
   dependencies:
     "@bacons/react-views": ^1.1.3
     "@expo/metro-runtime": 2.1.1
@@ -9674,10 +9699,11 @@ __metadata:
     "@react-navigation/bottom-tabs": ~6.5.7
     "@react-navigation/native": ~6.1.6
     "@react-navigation/native-stack": ~6.9.12
-    expo-head: 0.0.1
+    expo-head: 0.0.2
     expo-splash-screen: "*"
     query-string: 7.1.3
     react-helmet-async: ^1.3.0
+    schema-utils: ^4.0.1
     url: ^0.11.0
   peerDependencies:
     "@react-navigation/drawer": ^6.5.8
@@ -9697,7 +9723,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: ff092ce6b98dd73434872431c792453bc05873dea094124b5acfec72f6560452c4e00fb8e773c985e328f6f4d457e640d1a39102b68b7936dfff411a69801d51
+  checksum: 7277980833eecdcb016f9ba1b9e824186dd2a319d94e65149286f6b3531dd9152f19ce266aeb021479d8b0d7d9146614b4cb4656493141947e3324035ffbc6de
   languageName: node
   linkType: hard
 
@@ -16779,6 +16805,18 @@ __metadata:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: 39683edfe3beff018cdb1ae4fa296fc55cea13a080aa2b4d9351895cd64b22ba4d87e2e548c2a2ac1bc76e60980670adb0f413a58104479f1a0c12e5663cb8ca
+  languageName: node
+  linkType: hard
+
+"schema-utils@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "schema-utils@npm:4.0.1"
+  dependencies:
+    "@types/json-schema": ^7.0.9
+    ajv: ^8.9.0
+    ajv-formats: ^2.1.1
+    ajv-keywords: ^5.1.0
+  checksum: 745e7293c6b6c84940de16753c207311da821aa9911b9e2d158cfd9ffc5bf1f880147abbbe775b96cb8cd3c7f48890950fe0164f54eed9a8aabb948ebf8a3fdd
   languageName: node
   linkType: hard
 
